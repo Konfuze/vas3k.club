@@ -30,6 +30,7 @@ class ReplyForm(forms.ModelForm):
         max_length=10000,
         widget=forms.Textarea(
             attrs={
+                "id": False,
                 "maxlength": 10000,
                 "placeholder": "Напишите ответ...",
                 "class": "markdown-editor-invisible",
